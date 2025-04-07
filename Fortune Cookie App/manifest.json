@@ -1,0 +1,21 @@
+{
+  "name": "TaKi's App'",
+  "short_name": "TaKi",
+  "description": "A bit of everything for everyone.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ff6b6b",
+  "theme_color": "#ff6b6b",
+  "icons": [
+    {
+      "src": "icons/dice-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/dice-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaKi App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <span class="title">TaKi</span>
+            <div class="buttons">
+                <div class="minimize-button">&#x2500;</div>
+                <div class="close-button">&#x2715;</div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Welcome to TaKi,<br>your personal App!</h1>
+            <a href="Menu Page.html" class="start-button">Start</a>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then((registration) => {
+                console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch((error) => {
+                console.log('Service Worker registration failed:', error);
+              });
+          });
+        }
+      </script>
+
+</body>
+</html>
